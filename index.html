@@ -6,6 +6,40 @@
     <title>Kelompok 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+        .form {
+            display: block;
+            width: 500px;
+            height: auto;
+            /* background-color: blue; */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form input[type="text"],
+        .form input[type="password"],
+        .form input[type="number"],
+        .form input[type="date"],
+        .form select,
+        .form textarea,
+        .form input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .form input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        .form label {
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
 <body>
     <div id="kelompok"></div>
     <nav>
@@ -13,17 +47,18 @@
             <a href="#kelompok"><h3>Kelompok 3</h3></a>
         </div>
         <div class="list">
-            <a href="#nama-kelompok" class="link">Anggota Kelompok</a>
+            <a href="#teks-kelompok" class="link">Teks</a>
             <a href="#video-kelompok" class="link">Video/Audio</a>
-            <a href="#" class="link">Gambar</a>
-            <a href="#" class="link">Form</a>
-            <a href="#" class="link">Tabel</a>
+            <a href="#gambar-kelompok" class="link">Gambar</a>
+            <a href="#form-kelompok" class="link">Form</a>
+            <a href="#tabel-kelompok" class="link">Tabel</a>
         </div>
     </nav>
     <div class="konten-tugas"> 
         <div class="isi-tugas">
             <h3>Tugas Kelompok Pemrograman Web</h3>
             <p>Kelompok 3</p>
+            <a href="#nama-kelompok" style="padding: 10px; background-color: rgb(111, 111, 247); color: white; border-radius: 5px; margin-top: 20px;">Anggota Kelompok</a>
         </div>
     </div>
     <div class="konten" style="background-color: rgba(128, 128, 128, 0.137);" id="nama-kelompok">
@@ -60,6 +95,26 @@
             </div>
         </div>
     </div>
+    <div class="konten" id="teks-kelompok">
+        <h4 class="judul">Teks</h4> <!-- Slide Video/Audio --> 
+        <hr>
+        <div class="konten-body">
+            <div class="isi">
+                <h3>Penulisan tag h1 sampai h5</h3>
+                <h1>Ini H1</h1>
+                <h2>Ini H2</h2>
+                <h3>Ini H3</h3>
+                <h4>Ini H4</h4>
+                <h5>Ini H5</h5>
+            </div>
+            <div class="isi">
+                <h3>Penulisan tag p</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem cupiditate tenetur perferendis optio doloremque atque. Eos eius tempore porro nobis nihil id aliquam assumenda rerum animi atque quae quibusdam iusto, labore a, nemo, consectetur reiciendis beatae.</p>
+            <marquee behavior="alternate" direction="">tulisan ini berjalan</marquee>
+            </div>
+            
+        </div>
+    </div>
     <div class="konten" id="video-kelompok">
         <h4 class="judul">Video/Audio</h4> <!-- Slide Video/Audio --> 
         <hr>
@@ -93,6 +148,80 @@
             </div>
             <div class="isi">
                 <img src="assets/img/3.jpg" width="300" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="konten"  id="form-kelompok">
+        <h4 class="judul">Form</h4> <!-- Slide Gambar --> 
+        <hr>
+        <div class="konten-body">
+            <div class="isi">
+                <form action="" class="form">
+                    <input type="text" id="nama" placeholder="Nama">
+                    <input type="text" id="nim" placeholder="NIM">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="number" id="telp" placeholder="NO. Telp">
+                    <input type="date" id="tgl-lahir" placeholder="Tanggal Lahir">
+                </form>
+            </div>
+            <div class="isi">
+                <form action="" class="form">
+                    <label for="jenis-kelamin" style="color: black;">Jenis Kelamin</label>
+                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki"> <label for="laki-laki" style="display: inline; color: blacK;">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan"> <label for="perempuan" style="display: inline; color: blacK;">Perempuan</label>
+                    
+                    <label for="kelas">Kelas</label>
+                    <select id="kelas">
+                        <option value="">Pilih Kelas</option>
+                        <option value="1C">Kelas 1C</option>
+                        <option value="2C">Kelas 2C</option>
+                    </select>
+                    
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" placeholder="Alamat" ></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="konten"  id="tabel-kelompok">
+        <h4 class="judul">Tabel</h4> <!-- Slide Gambar --> 
+        <hr>
+        <div class="konten-body">
+            <div class="isi">
+                <table border="3">
+                <tr>
+                    <td>Nama</td>
+                    <td>NIM</td>
+                    <td>Kelas</td>
+                    <td>Alamat</td>
+                </tr>
+                <tr>
+                    <td>Muhamad Zaky Ramadhan</td>
+                    <td>2302072</td>
+                    <td>Kelas 2C TI</td>
+                    <td>Kesuben</td>
+                </tr>
+                <tr>
+                    <td>Mohammad Ardian Gusriel</td>
+                    <td>2302071</td>
+                    <td>Kelas 2C TI</td>
+                    <td>Kalinyamat Wetan</td>
+                </tr>
+                <tr>
+                    <td>Alisha Fatha N.S</td>
+                    <td>2302069</td>
+                    <td>Kelas 2C TI</td>
+                    <td>Pengabean</td>
+                </tr>
+                <tr>
+                    <td>Muhammad Zainal Mutaqin</td>
+                    <td>2302080</td>
+                    <td>Kelas 2C TI</td>
+                    <td>Slawi</td>
+                </table>
             </div>
         </div>
     </div>
